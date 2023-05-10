@@ -1,0 +1,706 @@
+body{
+    margin: 0;
+}
+header {
+    height: 70px;
+    padding: 10px 50px;
+}
+#first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#first .list{
+    display: flex;
+}
+#first li {
+    list-style: none;
+    margin-left: 35px;
+}
+#first .head-a{
+    margin-left: 30px;
+}
+#first a{
+    font-family: sans-serif;
+    color: #766d6d;
+    font-size: 1rem;
+    text-decoration: none;
+}
+#first a:hover{
+    text-decoration: underline;
+}
+#first img{
+    margin-left: 30px;
+    width: 83px;
+    height: 45px;
+}
+/*****corp de page*****/
+#welcome{
+    background-color: #1f2039;
+    height: 580px;
+}
+.welcomine{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 80px;
+    padding-right: 100px;
+    padding-left: 100px;
+    gap: 30px;
+}
+#welcome h1{
+    margin-top: 0px;
+    color: #a5b4fc;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    margin-bottom: 15px;
+}
+#welcome p{
+    color: #f9f8ff;
+    font-size:1.2em;
+}
+#welcome img{
+    width: 420px;
+}
+#welcome span{
+    color: #a5b4fc;
+    font-style: normal;
+}
+#welcome a{
+    margin-top: 15px;
+    font-size: 1em;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #8e86b5;
+    color: white;
+    border-radius: 50px;
+    padding: 22px 26px;
+}
+#welcome a:hover{
+    background-color:#675b9f ;
+}
+/****************projet****************/
+#projet{
+    padding-top: 60px;
+    background-color: #fff;
+}
+#projet .title{
+    text-align: center;
+    font-size: 1.1em;
+    font-family: 'Manrope', sans-serif;
+    margin-bottom: 75px;
+    color: #4c4545;
+}
+
+#projet .picture{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 170px;
+    margin-right: 170px;
+    gap: 20px;
+}
+#projet img{
+    width: 100%;
+}
+#projet .picture2{
+    margin-top: 20px;
+}
+
+/************contact*************/
+
+#contact{
+    height: 500px;
+    margin-top: 115px;
+    padding: 80px;
+    background-color: #1f2039;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+    color: white;
+}
+#contact h2{
+    margin-bottom: 50px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #a5b4fc;
+}
+#contact .nom-email{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+#contact .mess{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+#contact .form-nom, .form-email, .message{
+    display: flex;
+    flex-direction: column;
+}
+#contact .form-nom input{
+    height: 40px;
+    border-radius: 5px;
+}
+#contact .form-email input{
+    height: 40px;
+    border-radius: 5px;
+}
+#contact textarea{
+    height: 180px!important;
+    border-radius: 5px;
+}
+#contact .sub{
+    display: flex;
+    justify-content: center;
+}
+#contact .sub input{
+    background-color:#8788ba;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    margin-top: 32px;
+    border-radius: 50px;
+    font-size: 1em;
+    font-family: 'Manrope', sans-serif;
+    color: white;
+}
+#contact .sub input:hover{
+    background-color: #5d5e85;
+}
+#contact label{
+    margin-bottom: 10px;
+}
+/*********footer*********/
+#foots{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    margin-top: 5px;
+    padding: 1px 50px;
+    align-items: center;
+}
+#foots img {
+    margin-left: 30px;
+    width: 83px;
+    height: 45px;
+}
+#foots .foot-logo img{
+    width: 30px;
+    height: 30px;
+    row-gap: 50px;
+}
+#foots .foot-logo{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+/*************************responsive d'accueil robbie_lens*********************************/
+@media screen and (max-width: 1116px){
+    #projet .picture{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 80px;
+        margin-right: 79px;
+        gap: 20px;
+    }
+
+}
+@media screen and (max-width: 1020px){
+    #projet .picture{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #contact {
+        padding: 35px;
+    }
+    #contact .form-email input {
+        padding: 0px 0px!important;
+    }
+    #contact .form-email textarea {
+        padding: 0px 0px!important;
+    }
+}
+@media screen and (max-width: 991px){
+    .welcomine{
+        display: grid;
+        grid-template-columns:column-reverse;
+        align-items: center;
+        max-width: 100%;
+        margin: auto;
+        gap: 30px;
+        padding: 30px;
+    }
+    #welcome .text{
+        text-align: center;
+    }
+
+    #welcome img{
+        width: 100%;
+    }
+    #welcome .picture{
+        width: 100%;
+    }
+    #welcome {
+        height: 100%;
+    }
+    #first {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    header {
+        height: 100px;
+        padding: 10px 0;
+    }
+    #first .head-a {
+        margin-left: 0;
+    }
+    #first li {
+        width: 100px;
+        margin-left: 0;
+    }
+    #first .list {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 721px){
+    #projet .picture {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #first .head-a {
+        margin-left: 0px;
+    }
+    header {
+        height: 97px;
+        padding: 10px 0px;
+    }
+    #first li {
+        margin-left: 0px;
+    }
+    #first .list {
+        padding-left: 0px;
+    }
+    #first .list {
+        display: flex;
+        gap: 10px;
+    }
+    #contact .nom-email {
+
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    #contact {
+        height: 100%;
+
+    }
+    #first a {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 550px){
+    .welcomine {
+        padding: 16px;
+    }
+    #welcome h1 {
+        font-size: 2.5em;
+    }
+    #projet{
+        padding-top: 0px;
+    }
+    #projet .picture {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    #contact {
+        padding: 15px;
+    }
+    #foots {
+        display: flex;
+        padding: 0px 0px;
+    }
+    #foots .foot-logo {
+        display: flex;
+        justify-content: space-between;
+
+    }
+}
+@media screen and (max-width: 360px){
+
+    #welcome h1 {
+        font-size: 1.5em;
+    }
+    #projet .title h2 {
+        font-size: 1.3em;
+    }
+    #contact h2 {
+        font-size: 1.3rem;
+    }
+    #welcome a {
+        font-size: 0.8em;
+    }
+    #contact .sub input {
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 300px){
+    #foots {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px;
+    }
+    #projet .title h2 {
+        font-size: 1.1em;
+    }
+    #contact h2 {
+        font-size: 1.1rem;
+    }
+}
+/******************************************************A propos********************************************************/
+/*********************main***********************/
+
+.a-propos{
+    background-color: #1f2039;
+}
+#a-propos{
+    height: 665px;
+    padding: 45px;
+}
+#a-propos h1{
+    margin-top: 0px;
+    font-size: 3.5em;
+    text-align: center;
+    color: #a5b4fc;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: -10px;
+
+}
+#a-propos p{
+    font-size:1.3em;
+    color: white;
+}
+#a-propos h3{
+    font-size: 1.9em;
+    text-align: center;
+    color: white;
+}
+#a-propos li{
+    font-size: 1.3em;
+}
+.main-a-propos{
+    border-right: 1px solid #8e86b5;
+    border-bottom: 1px solid #8e86b5;
+    padding: 50px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 80px;
+    color: white;
+}
+#a-propos .port{
+    text-align: center;
+    color: white;
+}
+#a-propos a{
+    margin-top: 15px;
+    font-size: 1em;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #8e86b5;
+    color: white;
+    border-radius: 50px;
+    padding: 20px 30px;
+}
+#a-propos a:hover{
+    background-color: #564b8d;
+}
+/*******************tableau******************/
+
+table{
+    color: white;
+    text-align: center;
+    display: table;
+    font-size: 1.2em;
+    width: 100%;
+    border-collapse: collapse;
+}
+tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+th, td{
+    border: 1px solid  #a5b4fc;
+}
+td{
+    padding: 80px 95px;
+}
+th{
+    padding: 15px;
+}
+.section-tarifs{
+    padding: 45px;
+}
+.section-tarifs h2{
+    color: white;
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 80px;
+    margin-top: 0px;
+}
+/***************************responsive A propos************************************/
+@media screen and (max-width: 1116px){
+    #a-propos {
+        height: 100%;
+    }
+    .main-a-propos {
+        width: 70%;
+        margin: auto;
+    }
+    td {
+        padding: 80px 69px;
+    }
+}
+@media screen and (max-width: 1064px){
+    td {
+        padding: 70px 47px;
+    }
+}
+
+@media screen and (max-width: 1006px){
+    #a-propos {
+        height: 100%;
+    }
+    .main-a-propos {
+        width: 80%;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 930px){
+
+    td {
+        padding: 60px 25px;
+    }
+}
+@media screen and (max-width: 800px){
+    table {
+        color: white;
+        text-align: center;
+        display: table;
+        font-size: 1em;
+        width: 100%;
+        border-collapse: collapse;
+    }
+}
+@media screen and (max-width: 710px){
+    td {
+        padding: 55px 10px;
+    }
+}
+@media screen and (max-width: 620px){
+    #a-propos {
+        padding: 0px;
+    }
+    .main-a-propos {
+        width: 72%;
+        margin: auto;
+    }
+    #a-propos {
+        padding: 20px;
+    }
+    #a-propos h1 {
+        font-size: 3em;
+    }
+    .section-tarifs {
+        display: none;
+    }
+}
+@media screen and (max-width: 420px){
+    #a-propos {
+        padding: 25px;
+    }
+    .main-a-propos {
+        width: 60%;
+        margin: auto;
+    }
+    #a-propos h1 {
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width: 351px){
+    #a-propos {
+        padding: 10px;
+    }
+    .main-a-propos {
+        width: 50%;
+        margin: auto;
+    }
+    #a-propos p {
+        font-size: 1.1em;
+        color: white;
+    }
+    #a-propos h1 {
+        font-size: 2em;
+    }
+    #a-propos h3 {
+        font-size: 1.5em;
+    }
+    #a-propos li {
+        font-size: 1.1em;
+    }
+    .main-a-propos .list-1{
+        padding-left: 0px;
+    }
+    #a-propos a {
+        font-size: 0.8em;
+    }
+}
+/*****************************************************portfolio*********************************************************/
+/*corp de page*/
+.title_portfolio {
+    background-color: #1f2039;
+}
+.title_portfolio h1 {
+    font-size:3.5em;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 80px;
+}
+main{
+    display: block;
+}
+h1{
+    font-size: 3em;
+    color: #a5b4fc;
+    font-family: 'montserat',sans-serif;
+    font-weight: bold;
+}
+
+/*****photo******/
+.portfolio-section-photo h2{
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #585555;
+    font-family: 'montserat',sans-serif;
+    margin-bottom: 0px;
+}
+
+.grid-paysages {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 370px 370px 370px;
+    gap: 15px;
+}
+.grid-portraits{
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 370px 370px;
+    gap: 15px;
+}
+.grid-paysages img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-portraits img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section {
+    display: block;
+}
+.portfolio-section-photo .photo-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    justify-content:center;
+    align-items: center;
+    font-size: 40px;
+    color: #f9f8ff;
+    opacity: 0.6;
+    background-color: black;
+}
+.portfolio-section-photo{
+    padding: 80px;
+}
+.lien-contenuer-photo:hover .photo-hover {
+    display: flex;
+}
+.lien-contenuer-photo{
+    position: relative;
+}
+/************************responsive de portfolio********************************/
+@media screen and (max-width: 1116px){
+    .portfolio-section-photo {
+        padding: 30px;
+    }
+}
+@media screen and (max-width: 832px){
+    .grid-paysages {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: 370px 370px 370px;
+        gap: 15px;
+    }
+    .grid-portraits {
+        margin-top: 90px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 370px 370px;
+        gap: 15px;
+    }
+}
+@media screen and (max-width: 640px){
+    .portfolio-section-photo {
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 440px){
+    .portfolio-section-photo {
+        padding: 15px;
+    }
+    .title_portfolio h1 {
+        font-size: 2.5rem;
+        padding: 60px;
+    }
+}
+@media screen and (max-width: 350px){
+    .portfolio-section-photo .photo-hover {
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 300px){
+    .title_portfolio h1 {
+        font-size: 2rem;
+    }
+}
+
+
